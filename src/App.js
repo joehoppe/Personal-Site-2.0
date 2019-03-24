@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import AboutMe from './aboutme';
-import Button from './Button';
+import AboutMe from './AboutMe';
+import CardList from './CardList/CardList';
 
 const Index = () => <h2>Home</h2>;
 const Disclaimer = () => <h2>Disclaimer</h2>;
@@ -15,7 +15,7 @@ const AppRouter = () => (
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/aboutme/">About Me</Link>
+            <Link to="/AboutMe/">About Me</Link>
           </li>
           <li>
             <Link to="/disclaimer/">Disclaimer</Link>
@@ -26,7 +26,9 @@ const AppRouter = () => (
       <Route path="/" exact component={Index} />
       <Route path="/aboutme/" component={AboutMe} />
       <Route path="/disclaimer/" component={Disclaimer} />
-      <Button color="red" />    
+      
+      
+      <CardList top={100} />
     </div>
   </Router>
 );
