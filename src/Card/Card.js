@@ -4,18 +4,24 @@ class Card extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: null,
+            click: 0,
         };
     }
 
-    render() {
+    render(i) {
         return (
             <div>
-                <button onClick={() => this.setState({ value: 'X' })}>Button1
+                <button onClick={() => this.handleClick()}>Button1
       </button>
-                {this.state.value}
+                {this.state.click}
             </div>
         );
+    }
+
+    handleClick() {
+        this.setState({
+            click: this.state.click + 1
+        });
     }
 }
 
