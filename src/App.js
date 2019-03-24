@@ -23,11 +23,12 @@ const AppRouter = () => (
         </ul>
       </nav>
 
+      <h1>Joseph Hoppe</h1>
+
       <Route path="/" exact component={Index} />
       <Route path="/aboutme/" component={AboutMe} />
       <Route path="/disclaimer/" component={Disclaimer} />
-      
-      
+    
       <CardList top={100} />
     </div>
   </Router>
