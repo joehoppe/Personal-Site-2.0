@@ -9,13 +9,13 @@ class CardList extends React.Component {
       {
         date: "September 22, 2016",
         text: `Implemented a TypeScript outFile for a simple form of cache busting! I.e. "outFile": "./build / build_1.0.001.js".
-                Upgraded to Angular 1.5.8!`
+                <br />Upgraded to Angular 1.5.8!`
       },
       {
         date: "August 10, 2016",
         text: `Switched hosting providers from AppHarbor to an Azure web app!
-        Launched <a href="http://hoppe.apphb.com/" target="blank" title="my first Node.js app on AppHarbor">my first Node.js app on AppHarbor</a>! It’s a couple landing pages that provide links to the new Azure app, which you are using now.
-        Added an <a href="http://www.josephhoppe.com/AboutMe" title="About Me">About Me page </a>!`
+        <br />Launched <a href="http://hoppe.apphb.com/" target="blank" title="my first Node.js app on AppHarbor">my first Node.js app on AppHarbor</a>! It’s a couple landing pages that provide links to the new Azure app, which you are using now.
+        <br />Added an <a href="http://www.josephhoppe.com/AboutMe" title="About Me">About Me page </a>!`
       }, 
       {
         date: "July 12, 2016",
@@ -28,7 +28,7 @@ class CardList extends React.Component {
       {
         date: "April 18, 2016",
         text: `Enabled HTML 5 mode routing! Not interested in supporting < IE11.
-        Migrated much of the site's JS to TypeScript 1.8!`
+        <br />Migrated much of the site's JS to TypeScript 1.8!`
       }, 
       {
         date: "November 9, 2015",
@@ -37,23 +37,17 @@ class CardList extends React.Component {
       {
         date: "October 29, 2015",
         text: `Wrote my first LESS, and compiled it with Gulp!
-        Vetted it with JSCS and JSHint, all thanks to John Papa’s course on JavaScript Build Automation with Gulp.js!`
+        <br />Vetted it with JSCS and JSHint, all thanks to John Papa’s course on JavaScript Build Automation with Gulp.js!`
       }, 
       {
         date: "August 27, 2015",
         text: `Upgraded to Angular 1.4.4! 
-        Added a Bootstrap stylesheet from Bootswatch as well.
-        Mocked out this backend using ngMock.`
+        <br />Added a Bootstrap stylesheet from Bootswatch as well.
+        <br />Mocked out this backend using ngMock.`
       }, 
       {
         date: "April 10, 2015",
         text: `Wrote my first AngularJS plugin module! Find Angular Errors on Toast on Github.`
-      }, 
-      {
-        date: "August 27, 2015",
-        text: `Upgraded to Angular 1.4.4! 
-        Added a Bootstrap stylesheet from Bootswatch as well.
-        Mocked out this backend using ngMock.`
       }, 
       {
         date: "November 20, 2014",
@@ -67,8 +61,8 @@ class CardList extends React.Component {
       {
         date: "October 14, 2014",
         text: `Redid the site using Bower 1.3 as a package manager! 
-        Implemented a rough Angular CDN failback mechanism. 
-        Loving the Visual Studio SideWaffle templates!`
+        <br />Implemented a rough Angular CDN failback mechanism. 
+        <br />Loving the Visual Studio SideWaffle templates!`
       }, 
       {
         date: "May 22, 2014",
