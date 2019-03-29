@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AboutMe from './AboutMe';
 import CardList from './CardList/CardList';
+import 'bootstrap/dist/css/bootstrap.css'
 
 const Index = () => <h2>Home</h2>;
 const Disclaimer = () => <h2>Disclaimer</h2>;
