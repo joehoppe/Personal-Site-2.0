@@ -56,7 +56,7 @@ class CardList extends React.Component {
       }, 
       {
         date: "November 7, 2014",
-        text: `Earned 1,000+ reputation on StackOverflow today!`
+        text: `<a href="https://stackoverflow.com/users/846844/hoppe" target="blank" title="My StackOverflow profile">Earned 1,000+ reputation</a> on StackOverflow today!`
       }, 
       {
         date: "October 14, 2014",
