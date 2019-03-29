@@ -15,7 +15,7 @@ class CardList extends React.Component {
         date: "August 10, 2016",
         text: `Switched hosting providers from AppHarbor to an Azure web app!
         Launched <a href="http://hoppe.apphb.com/" target="blank" title="my first Node.js app on AppHarbor">my first Node.js app on AppHarbor</a>! It’s a couple landing pages that provide links to the new Azure app, which you are using now.
-        Added an <a href="http://www.josephhoppe.com/AboutMe" title="About Me">About Me page!`
+        Added an <a href="http://www.josephhoppe.com/AboutMe" title="About Me">About Me page </a>!`
       }, 
       {
         date: "July 12, 2016",
@@ -92,7 +92,7 @@ class CardList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         {this.cardsElements}
       </div>
     );
