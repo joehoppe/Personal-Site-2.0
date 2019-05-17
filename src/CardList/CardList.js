@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card.js'
+import { Helmet } from "react-helmet";
 
 class CardList extends React.Component {
   constructor(props) {
@@ -15,7 +16,7 @@ class CardList extends React.Component {
         date: "August 10, 2016",
         text: `Switched hosting providers from AppHarbor to an Azure web app!
         <br />Launched <a href="http://hoppe.apphb.com/" target="blank" title="my first Node.js app on AppHarbor">my first Node.js app on AppHarbor</a>! It’s a couple landing pages that provide links to the new Azure app, which you are using now.
-        <br />Added an <a href="http://www.josephhoppe.com/AboutMe" title="About Me">About Me page </a>!`
+        <br />Added an <a href="http://www.josephhoppe.com/aboutme" title="About Me">About Me page </a>!`
       }, 
       {
         date: "July 12, 2016",
@@ -87,6 +88,10 @@ class CardList extends React.Component {
   render() {
     return (
       <div className="container">
+        <Helmet>
+            <title>Joseph Hoppe - Some stuff I&rsquo;ve been working on</title>
+        </Helmet>
+
         {this.cardsElements}
       </div>
     );

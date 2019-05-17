@@ -1,7 +1,12 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 
 const AboutMe = () => (
     <section className="container">
+        <Helmet>
+            <title>Joseph Hoppe - About Me</title>
+        </Helmet>
+
         <div className="row">
             <div className="row-sm">
                 <div className="col-med">
