@@ -23,3 +23,9 @@ steps:
     ProjectDirectory: '/'
     Arguments: 'build'
     ProductionMode: true
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: build'
+  inputs:
+    PathtoPublish: './build'
+    ArtifactName: 'build'    
