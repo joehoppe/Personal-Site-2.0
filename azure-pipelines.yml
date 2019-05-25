@@ -24,6 +24,10 @@ steps:
     Arguments: 'build'
     ProductionMode: true
 
+- task: Bash@3
+  inputs:
+    filePath: 'ls'
+
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: build'
   inputs:
