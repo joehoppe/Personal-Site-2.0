@@ -23,7 +23,7 @@ jobs:
 
   - task: Yarn@2
     inputs:
-      ProjectDirectory: '/'
+      ProjectDirectory: './'
       Arguments: 'build'
       ProductionMode: true
 
