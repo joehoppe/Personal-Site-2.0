@@ -6,30 +6,42 @@
 trigger:
 - master
 
-pool:
-  vmImage: 'ubuntu-latest'
+jobs:
+- job: Build
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+  pool:
+    vmImage: 'win1803'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  steps:
+  - script: echo Hello, world!
+    displayName: 'Run a one-line script'
 
-- task: Yarn@2
-  inputs:
-    ProjectDirectory: '/'
-    Arguments: 'build'
-    ProductionMode: true
+  - script: |
+      echo Add other tasks to build, test, and deploy your project.
+      echo See https://aka.ms/yaml
+    displayName: 'Run a multi-line script'
 
-- task: Bash@3
-  inputs:
-    filePath: 'ls'
+  - task: Yarn@2
+    inputs:
+      ProjectDirectory: '/'
+      Arguments: 'build'
+      ProductionMode: true
 
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: build'
-  inputs:
-    PathtoPublish: './build'
-    ArtifactName: 'build'    
+  - task: CmdLine@2
+    displayName: 'Create Zip Folder'
+    inputs:
+      script: 'mkdir "$(Build.ArtifactStagingDirectory)/zip"'      
+
+  - task: ArchiveFiles@2
+    inputs:
+      rootFolderOrFile: '$(Build.ArtifactStagingDirectory)\build'
+      includeRootFolder: false
+      archiveType: 'zip'
+      archiveFile: '$(Build.ArtifactStagingDirectory)/zip/$(Build.BuildNumber).zip'
+      replaceExistingArchive: true      
+
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: build'
+    inputs:
+      PathtoPublish: './zip'
+      ArtifactName: 'build'    
