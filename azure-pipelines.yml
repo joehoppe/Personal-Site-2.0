@@ -24,8 +24,7 @@ jobs:
   - task: Yarn@2
     inputs:
       ProjectDirectory: './'
-      Arguments: 'build'
-      ProductionMode: true         
+      Arguments: 'build'      
 
   - script: "dir .."
     displayName: 'Run dir'      
