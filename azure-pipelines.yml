@@ -37,7 +37,7 @@ jobs:
   - task: CopyFiles@2
     displayName: 'Stage Files'
     inputs:
-      SourceFolder: 'D:\_work\1\s\build'
+      SourceFolder: './build'
       Contents: '**'
       TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
       CleanTargetFolder: true
@@ -61,3 +61,4 @@ jobs:
     inputs:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)/zip'
       ArtifactName: 'build'    
+
