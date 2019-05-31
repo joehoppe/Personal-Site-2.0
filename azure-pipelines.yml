@@ -27,6 +27,9 @@ jobs:
       Arguments: 'build'
       ProductionMode: true
 
+- script: cd ..
+    displayName: 'Move up one level'            
+
   - script: dir
     displayName: 'Run dir'      
 
