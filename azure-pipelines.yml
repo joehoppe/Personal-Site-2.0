@@ -27,10 +27,13 @@ jobs:
       Arguments: 'build'
       ProductionMode: true
 
+  - script: dir
+    displayName: 'Run dir'      
+
   - task: CopyFiles@2
     displayName: 'Stage Files'
     inputs:
-      SourceFolder: 'D:\a\1\a\s\build\'
+      SourceFolder: 'D:\_work\1\s\build'
       Contents: '**'
       TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
       CleanTargetFolder: true
