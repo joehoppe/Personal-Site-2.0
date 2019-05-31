@@ -25,12 +25,9 @@ jobs:
     inputs:
       ProjectDirectory: './'
       Arguments: 'build'
-      ProductionMode: true
+      ProductionMode: true         
 
-  - script: "cd.."
-    displayName: 'Move up one level'            
-
-  - script: dir
+  - script: "dir .."
     displayName: 'Run dir'      
 
   - task: CopyFiles@2
