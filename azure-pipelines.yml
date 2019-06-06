@@ -1,20 +1,11 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- master
+- uat
 
 jobs:
 - job: Build
 
   pool:
     vmImage: 'win1803'
-
-  steps:
-  - script: echo Hello, world!
-    displayName: 'Run a one-line script'
 
   - script: |
       echo Add other tasks to build, test, and deploy your project.
@@ -30,9 +21,6 @@ jobs:
     inputs:
       ProjectDirectory: './'
       Arguments: 'build'      
-
-  - script: "dir .."
-    displayName: 'Run dir'      
 
   - task: CopyFiles@2
     displayName: 'Stage Files'
@@ -61,4 +49,3 @@ jobs:
     inputs:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)/zip'
       ArtifactName: 'build'    
-
