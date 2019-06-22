@@ -8,6 +8,10 @@ class CardList extends React.Component {
 
     const cards = [
       {
+        date: "October 30, 2016",
+        text: `Began project to upgrade this site from Angular 1 to 2`
+      },
+      {
         date: "September 22, 2016",
         text: `Implemented a TypeScript outFile for a simple form of cache busting! I.e. "outFile": "./build / build_1.0.001.js".
                 <br />Upgraded to Angular 1.5.8!`
