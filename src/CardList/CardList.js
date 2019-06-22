@@ -8,8 +8,27 @@ class CardList extends React.Component {
 
     const cards = [
       {
+        date: "June 21, 2019",
+        text: `Implemented an <a href="https://github.com/joehoppe/Personal-Site-2.0/blob/master/azure-pipelines.yml" title="YAML build definition" 
+          target="_blank">Azure Devops CI pipeline.</a>`
+      },
+      {
+        date: "May 15, 2019",
+        text: `Completed PluralSight course 
+          <a href="https://app.pluralsight.com/library/courses/git-fundamentals/table-of-contents" target="_blank" title="Course Name">Git Fundamentals</a>.`
+      },
+      {
+        date: "May 1, 2016",
+        text: `Completed PluralSight course 
+          <a href="https://app.pluralsight.com/library/courses/using-git-source-control-visual-studio/table-of-contents" target="_blank" title="Course Name">Using Git for Source Control in Visual Studio 2019</a>.`
+      },  
+      {
+        date: "April 13, 2016",
+        text: `Redesigned the site using React-Create-App (React 16).`
+      },            
+      {
         date: "October 30, 2016",
-        text: `Began project to upgrade this site from Angular 1 to 2`
+        text: `Began project to upgrade this site from Angular 1 to 2.`
       },
       {
         date: "September 22, 2016",
