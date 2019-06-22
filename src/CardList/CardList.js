@@ -10,7 +10,7 @@ class CardList extends React.Component {
       {
         date: "June 21, 2019",
         text: `Implemented an <a href="https://github.com/joehoppe/Personal-Site-2.0/blob/master/azure-pipelines.yml" title="YAML build definition" 
-          target="_blank">Azure Devops CI pipeline.</a>`
+          target="_blank">Azure Devops CI/CD pipeline to my UAT website.</a>`
       },
       {
         date: "May 15, 2019",
