@@ -21,7 +21,7 @@ jobs:
   - task: CopyFiles@2
     displayName: 'Stage Files'
     inputs:
-      SourceFolder: '$(Build.SourceDirectory)'
+      SourceFolder: '$(Build.SourcesDirectory)'
       Contents: '**'
       TargetFolder: '$(Build.ArtifactStagingDirectory)/dist'
       CleanTargetFolder: true
