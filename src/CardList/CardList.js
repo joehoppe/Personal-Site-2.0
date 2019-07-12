@@ -18,6 +18,16 @@ class CardList extends React.Component {
           <a href="https://app.pluralsight.com/library/courses/git-fundamentals/table-of-contents" target="_blank" title="Course Name">Git Fundamentals</a>.`
       },
       {
+        date: "April 19, 2019",
+        text: `Back in action blogging!
+          <a href="https://medium.com/@JosephHoppe/removing-unnecessary-using-statements-from-a-large-solution-is-a-quick-and-easy-way-to-improve-the-cb672702f0e6" target="_blank" title="Blog post title">Removing unnecessary using statements</a>.`
+      },            
+      {
+        date: "Jan 3, 2017",
+        text: `Wrote my first blog post! 
+          <a href="https://medium.com/@JosephHoppe/net-developer-revisits-java-after-a-decade-592e79547d34" target="_blank" title="My first blog post!">.Net developer revisits Java after a decade</a>.`
+      },      
+      {
         date: "May 1, 2016",
         text: `Completed PluralSight course 
           <a href="https://app.pluralsight.com/library/courses/using-git-source-control-visual-studio/table-of-contents" target="_blank" title="Course Name">Using Git for Source Control in Visual Studio 2019</a>.`
