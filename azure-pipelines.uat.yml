@@ -8,12 +8,12 @@ jobs:
     vmImage: 'win1803'
 
   steps:
-  - task: Yarn@2
+  - task: Yarn@3
     inputs:
       ProjectDirectory: './'
       ProductionMode: true         
 
-  - task: Yarn@2
+  - task: Yarn@3
     inputs:
       ProjectDirectory: './'
       Arguments: 'build'      
